@@ -1,0 +1,4 @@
+1-Change app icon
+2-Change app name to Assignments Reminder
+3-Remove error on Back button
+4-Alaram for reminder before deadline

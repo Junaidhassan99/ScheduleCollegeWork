@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schedulecollegework">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/schedule"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/schedule"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.schedulecollegework.appmenu.AboutUs"
+            android:label="About us" />
+        <activity
+            android:name="com.example.schedulecollegework.appmenu.Help"
+            android:label="Help"/>
+        <activity android:name=".AddTaskActivity" />
+        <activity android:name=".TaskActivity" />
+        <activity
+            android:name=".AddSubjectActivity"
+            android:label="Add Subject" />
+        <activity android:name=".SubjectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".DataBase.SubjectProvider"
+            android:authorities="com.example.schedulecollegework"
+            android:exported="false" />
+    </application>
+
+</manifest>
